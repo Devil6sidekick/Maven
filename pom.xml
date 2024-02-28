@@ -6,6 +6,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging> <!-- Packaging type specified here -->
 
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
@@ -27,8 +28,6 @@
   </dependencies>
 
   <build>
-    <packaging>war</packaging>
-    
     <!-- Plugin configurations (if needed) -->
     <plugins>
       <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
