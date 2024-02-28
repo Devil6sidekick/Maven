@@ -28,7 +28,6 @@
   </dependencies>
 
   <build>
-    <!-- Plugin configurations (if needed) -->
     <plugins>
       <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugin>
@@ -69,6 +68,16 @@
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>3.0.0</version>
+      </plugin>
+
+      <!-- Maven WAR Plugin configuration -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.4.0</version>
+        <configuration>
+          <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+        </configuration>
       </plugin>
     </plugins>
   </build>
